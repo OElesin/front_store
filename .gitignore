@@ -1,0 +1,5 @@
+/application/config/config.php
+application/views/_templates/maintheme/_cache/
+/application/views/_template/maintheme/_cache/
+vendor/
+
