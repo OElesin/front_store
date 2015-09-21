@@ -8,6 +8,10 @@ class Store_front extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->data['title'] = "Bargains.Com.Ng | ";
+		if(empty($this->input->cookie('bargains_user_cookie'))) {
+			$this->input->set_cookie('bargains_user_cookie', $this->session->userdata('session_id'), '86500');
+		}
+		$this->user_id = $this->input->cookie('bargains_user_cookie');
 	}
 
 	public function index(){
@@ -20,10 +24,14 @@ class Store_front extends CI_Controller {
 		$this->smarty->view( 'home.tpl' , $this->data);
 	}
 
-	public function test(){
-		$this->data['page'] = "Test 2";
+	public function product_view($product_id){
+		$url = $this->config->item('product').$product_id;
 
-		$this->smarty->view('home', $this->data);
+		$payload = $this->curl->simple_get($url);
+		$temp = json_decode($payload, true);
+		$this->data['page'] = "Pro";
+
+		$this->smarty->view('product-details.tpl', $this->data);
 	}
 
 }
