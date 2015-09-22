@@ -3,7 +3,6 @@
 	<section>
 		<div class="container">
 			<div class="row">
-
 				<div class="col-sm-3">
 					<div class="left-sidebar">
 						<h2>Promotions</h2>
@@ -18,14 +17,10 @@
 							<div class="panel panel-default">
 								<script type="text/javascript" src="http://konga.postaffiliatepro.com/scripts/banner.php?k_id=hertz&k_bid=fd04a75e"></script>
 							</div>
-							
-
 						</div><!--/category-products-->
-					
 					</div>
 				</div>
-
-				<div class="col-sm-6 padding-right">
+				<div class="col-sm-9 padding-right">
 					<div class="features_items"><!--features_items-->
 						<h2 class="title text-center">Features Items</h2>
 						{foreach from=$products item=product}
@@ -50,29 +45,7 @@
 							</div>
 						</div>
 						{/foreach}
-						
 					</div><!--features_items-->
-					
-				</div>
-				<div class="col-sm-3">
-					<div class="left-sidebar">
-						<h2>Promotions</h2>
-						<div class="panel-group category-products"><!--category-productsr-->
-							<div class="panel panel-default" style="position:fixed">
-								<script type="text/javascript" src="http://konga.postaffiliatepro.com/scripts/banner.php?k_id=hertz&k_bid=d6297a65"></script>
-							</div>
-							<div class="panel panel-default">
-								<script type="text/javascript" src="http://konga.postaffiliatepro.com/scripts/banner.php?k_id=hertz&k_bid=562ad577"></script>
-							</div>
-							<br>
-							<div class="panel panel-default">
-								<script type="text/javascript" src="http://konga.postaffiliatepro.com/scripts/banner.php?k_id=hertz&k_bid=fd04a75e"></script>
-							</div>
-							
-
-						</div><!--/category-products-->
-					
-					</div>
 				</div>
 			</div>
 		</div>
