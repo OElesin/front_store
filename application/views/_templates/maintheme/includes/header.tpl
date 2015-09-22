@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Bargains.com.ng provides you with the best deals from various e-commerce sites.">
+    <meta name="author" content="Olalekan Elesin">
+    <meta name="google-site-verification" content="googlea5bb143e07bc001d.html">
     <title>{$title} {$page}</title>
     <link href="{url}{$THEME_PATH}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{url}{$THEME_PATH}/css/font-awesome.min.css" rel="stylesheet">
